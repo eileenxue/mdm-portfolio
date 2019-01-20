@@ -1,15 +1,27 @@
-.hero-container {
+.hero {
     height: 100vh;
     background-color: $ru-blue;
-    .hero-inner {
+    &--inner {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
     }
-    .hero-text {
+    &--title {
         display: flex;
-        text-align: center;
         color: white;
+        font-size: 2.5rem;
+    }
+    .github-link {
+        white-space: normal;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero {
+        &--title {
+            font-size: 2rem;
+        }
     }
 }

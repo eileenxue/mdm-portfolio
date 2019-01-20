@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex,nofollow">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -49,9 +50,12 @@
     </nav>
 
     <!--Hero Cover-->
-    <div class="container-fluid hero-container">
-        <div class="container hero-inner">
-            <h1 class="hero-text">Why Eileen is the perfect candidate for Ryerson's Master of Digital Media</h1>
+    <div class="container-fluid hero">
+        <div class="container hero--inner">
+           <div class="col-sm-12 text-center">
+            <h1 class="hero--title">Why Eileen is the perfect candidate for Ryerson's Master of Digital Media</h1>
+            <a href="https://github.com/eileenxue/mdm-portfolio" target="_blank" class="github-link btn btn-primary">To demonstrate my web development skills, view the source code of this website on GitHub <i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
 
@@ -73,8 +77,8 @@
         <div class="container portfolio">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h2>Portfolio</h2>
-                    <p>Write instructions on how to use this section</p>
+                    <h2 class="portfolio--title">Portfolio</h2>
+                    <p class="portfolio--info">Write instructions on how to use this section</p>
                     <!--Add filtering?-->
                 </div>
             </div>
@@ -85,9 +89,9 @@
                     <img src="https://via.placeholder.com/200x150" alt="" class="portfolio--thumbnail">
                     
                     </a>
-                    <div class="portfolio--caption text-center">
-                    <p>Portfolio Item</p>
-                    <p>Category</p>
+                    <div class="portfolio--caption text-center bg-light">
+                        <h3 class="portfolio--caption-title">Portfolio Item</h3>
+                        <h4 class="portfolio--caption-category">Web Development</h4>
                     </div>
                     
                     <!-- Modal -->
@@ -168,6 +172,9 @@
     
     <!--jQuery Easing-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <!--FontAwesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     
     <!--Custom-->
     <script src="js/scrolling-nav.js"></script>
