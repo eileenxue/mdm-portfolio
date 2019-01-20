@@ -1,0 +1,169 @@
+/*This is the main scss file that collects the global scss files from other folders*/
+/*Mixins*/
+/* line 6, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/base/_typography.scss */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 9, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/base/_typography.scss */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Ryerson Branding Colours*/
+/*Portfolio Branding Colours*/
+/* line 2, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+#mainNav {
+  background-color: #082A4E;
+}
+
+/* line 4, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #ffdc00;
+}
+
+/* line 14, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+#mainNav .navbar-brand {
+  color: #ffdc00;
+}
+
+/* line 17, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #ccb000;
+}
+
+/* line 26, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* line 33, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffdc00;
+}
+
+@media (min-width: 768px) {
+  /* line 42, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  /* line 50, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 58, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  /* line 63, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #082A4E;
+  }
+  /* line 67, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_nav.scss */
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+/* line 1, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_portfolio.scss */
+#portfolio {
+  padding: 24px;
+}
+
+/* line 11, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_portfolio.scss */
+.portfolio--thumbnail {
+  width: 100%;
+  /*temporary*/
+}
+
+/* line 15, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_portfolio.scss */
+.portfolio--caption {
+  background-color: #004c9b;
+}
+
+/* line 20, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_portfolio.scss */
+.portfolio--modal .modal-dialog {
+  max-width: 100vw;
+  margin: 1rem;
+}
+
+/* line 1, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_hero.scss */
+.hero-container {
+  height: 100vh;
+  background-color: #004c9b;
+}
+
+/* line 4, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_hero.scss */
+.hero-container .hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 10, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_hero.scss */
+.hero-container .hero-text {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+/* line 1, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_footer.scss */
+.footer {
+  height: 300px;
+  padding: 24px;
+  color: white;
+}
+
+/* line 6, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_footer.scss */
+.footer--disclaimer {
+  border: 1px solid white;
+  font-size: 0.9rem;
+  padding: 8px;
+}
+
+/* line 12, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_footer.scss */
+.footer--copyright {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* line 1, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_summary.scss */
+.summary {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 1, /Users/Eileen/Downloads/Ryerson MDM Application/mdm-portfolio/scss/layout/_goals.scss */
+.goals {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=../css/main.map */
