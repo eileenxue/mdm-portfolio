@@ -1,38 +1,71 @@
-#portfolio{
+#portfolio {
     padding: 24px;
 }
 
-.portfolio{
+.portfolio {
     
-    &--item{
+    &--title{
+        font-weight: 400;    
+    }
+    
+    &--item {
         //background-color: aliceblue;
     }
-    
-    &--thumbnail{
-        width: 100%; /*temporary*/
+    &--link {
+        position: relative;
+        display: block;
     }
-    
-    &--caption{
+    &--hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all ease .5s;
+        transition: all ease .5s;
+        opacity: 0;
+        background: rgba(0, 0, 0, .5);
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &--hover-content {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 20px;
+        margin-top: -12px;
+        text-align: center;
+        color: #fff;
+    }
+    &--thumbnail {
+        width: 100%; //temporary
+    }
+    &--caption {
         //background-color: $ru-blue;
     }
-    
-    &--caption-title{
+    &--caption-title {
         font-size: 1.2rem;
+        padding: 16px 8px 0px 8px;
     }
-    
-    &--caption-category{
+    &--caption-category {
         font-size: 1rem;
+        padding: 0 8px 16px 8px;
     }
-    
-    &--caption-title, &--caption-category{
-        margin-bottom: 0;
-        padding: 8px;
-    }
-    
-    &--modal{
-        .modal-dialog{
+
+    &--modal {
+        .modal-dialog {
             max-width: 100vw;
             margin: 1rem;
         }
     }
+    
+    &--display{
+        width: 100%; //temporary
+    }
+    
+    &--details{
+        padding: 16px 8px;
+    }
+    
+    
 }

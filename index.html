@@ -24,37 +24,37 @@
 
     <!--Navigation-->
     <nav class="navbar fixed-top navbar-light navbar-expand-md" id="mainNav">
-       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Eileen Xue</a>
-        
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#summary">Summary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#goals">Goals</a>
-            </li>
-          </ul>
-        </div>
-        
-        
+        <div class="container">
+            <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Eileen Xue</a>-->
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#goals">Goals</a>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
     </nav>
 
     <!--Hero Cover-->
     <div class="container-fluid hero">
         <div class="container hero--inner">
-           <div class="col-sm-12 text-center">
-            <h1 class="hero--title">Why Eileen is the perfect candidate for Ryerson's Master of Digital Media</h1>
-            <a href="https://github.com/eileenxue/mdm-portfolio" target="_blank" class="github-link btn btn-primary">To demonstrate my web development skills, view the source code of this website on GitHub <i class="fab fa-github"></i></a>
+            <div class="col-sm-12 text-center">
+                <h1 class="hero--title"><span>Why <span class="hero--title-highlight">Eileen</span> is the perfect candidate for</span> <span>Ryerson's Master of Digital Media</span></h1>
+                <a href="https://github.com/eileenxue/mdm-portfolio" target="_blank" class="github-link btn btn-primary">To demonstrate my web development skills, view the source code of this website on GitHub <i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
@@ -62,10 +62,10 @@
     <!--Section-->
     <section id="summary" class="bg-light">
         <div class="container summary">
-           <div class="row">
-           <div class="col-sm-12">
-            <p>Relevant experiences through post secondary education and work</p>
-            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Summary of relevant post secondary education and work experiences that had prepared me for this program that are then showcased below</p>
+                </div>
             </div>
         </div>
     </section>
@@ -78,28 +78,32 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h2 class="portfolio--title">Portfolio</h2>
-                    <p class="portfolio--info">Write instructions on how to use this section</p>
+                    <p class="portfolio--info">Write instructions on how to use this section. Perhaps add filtering options.</p>
                     <!--Add filtering?-->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-6 col-md-4 portfolio--item">
-                    <a href="#portfolioItem1" data-toggle="modal">
-                    <img src="https://via.placeholder.com/200x150" alt="" class="portfolio--thumbnail">
-                    
+                <div class="col-md-6 col-lg-4 portfolio--item">
+                    <a href="#portfolioItem1" class="portfolio--link" data-toggle="modal">
+                       <div class="portfolio--hover">
+                        <div class="portfolio--hover-content">
+                          <i class="fas fa-search-plus fa-2x"></i>
+                        </div>
+                      </div>
+                        <img src="https://via.placeholder.com/200x150" alt="" class="portfolio--thumbnail">
                     </a>
                     <div class="portfolio--caption text-center bg-light">
                         <h3 class="portfolio--caption-title">Portfolio Item</h3>
                         <h4 class="portfolio--caption-category">Web Development</h4>
                     </div>
-                    
+
                     <!-- Modal -->
-                    <div class="portfolio--modal modal fade" id="portfolioItem1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="portfolio--modal modal fade" id="portfolioItem1" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <h5 class="modal-title">Portfolio Title</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -107,17 +111,25 @@
                                 <div class="modal-body">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                 <img src="https://via.placeholder.com/300x250" alt="" class="portfolio--display">
+                                            <div class="col-md-6 col-lg-8">
+                                                <img src="https://via.placeholder.com/300x250" alt="" class="portfolio--display">
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-lg-4">
+                                               <div class="portfolio--details">
                                                 <p>Description: </p>
                                                 <p>Tools: </p>
+                                                <p>Date: </p>
+                                                <p>Category: </p>
+                                                <!--<ul class="list-inline">
+                                                    <li>Hi</li>
+                                                </ul>-->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Link</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
@@ -137,14 +149,16 @@
         </div>
 
     </section>
-    
-    
+
+
 
     <!--Goals-->
     <section id="goals" class="bg-light">
         <div class="container goals">
-           <div class="row">
-            <p>These are my goals upon completion of MDM</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Hopes/Goals/Achievements upon completion of MDM</p>
+                </div>
             </div>
         </div>
     </section>
@@ -153,32 +167,33 @@
     <!--Footer-->
     <footer class="bg-dark footer">
         <div class="container">
-            <p class="footer--disclaimer">Disclaimer: This site was created specifically for the admissions officers at Ryerson University. Upon completion of the admissions process, this site will be removed from the public domain. If you happened to stumble upon this and wish to connect with Eileen, please visit her LinkedIn profile. </p>
+           <div class="row">
+           <div class="col-sm-12">
+            <p class="footer--disclaimer"><strong>Disclaimer</strong>: This site was created specifically for the admissions officers at Ryerson University. Upon completion of the admissions process, this site will be removed from the public domain. If you wish to connect with Eileen, please visit her LinkedIn profile. </p>
             <p class="footer--copyright">&copy;
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
                 </script> Eileen Xue. All Rights Reserved.</p>
-            </div>
+                </div>
+                </div>
+        </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
     <!--jQuery Easing-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    
+
     <!--FontAwesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-    
+
     <!--Custom-->
     <script src="js/scrolling-nav.js"></script>
-    
+
 </body>
 
 </html>

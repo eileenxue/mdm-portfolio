@@ -8,13 +8,35 @@
         height: 100%;
     }
     &--title {
-        display: flex;
         color: white;
         font-size: 2.5rem;
+    }
+    &--title-highlight {
+        color: black;
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        transition: all 0.35s;
+        
+        &::after {
+            content: '';
+            display: block;
+            background: $ru-gold;
+            height: 85%;
+            position: absolute;
+            top: 10%;
+            left: -3%;
+            width: 105%;
+            z-index: -1;
+            -webkit-transform: rotate(-3deg) skew(12deg);
+            transform: rotate(-3deg) skew(12deg);
+        }
     }
     .github-link {
         white-space: normal;
         margin-top: 32px;
+        font-size: 1.1rem;
     }
 }
 
