@@ -50,7 +50,7 @@
     </nav>
 
     <!--Hero Cover-->
-    <div class="container-fluid hero">
+    <div class="container-fluid hero" role="banner">
         <div class="container hero--inner">
             <div class="col-sm-12 text-center">
                 <h1 class="hero--title"><span>Why <span class="hero--title-highlight">Eileen</span> is the perfect candidate for</span> <span>Ryerson's Master of Digital Media</span></h1>
@@ -60,12 +60,14 @@
     </div>
 
     <!--Section-->
-    <section id="summary" class="bg-light">
+    <section id="summary" class="bg-light" aria-label="summary">
         <div class="container summary">
             <div class="row">
                 <div class="col-sm-12">
-                    <p style="font-size: 1.4rem;">Proficient in different areas of digital media, I am certain I can excel in this program to further enhance my career aspirations while giving back to the local community.</p>
-                    <p>Jill of all Trades</p>
+                    <blockquote class="blockquote text-right">
+                            <p class="mb-0">Proficient in different areas of digital media, I am certain I can excel in this program to further enhance my career aspirations while giving back to the local community.</p>
+                            <footer class="blockquote-footer">Eileen Xue</footer>
+                          </blockquote>
                 </div>
             </div>
         </div>
@@ -73,13 +75,13 @@
 
 
     <!--Portfolio-->
-    <section id="portfolio">
+    <section id="portfolio" aria-label="portfolio">
 
         <div class="container portfolio">
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h2 class="portfolio--title">Portfolio</h2>
-                    <p class="portfolio--info">Learn more about each project by clicking on it.</p>
+                    <p class="portfolio--info">Click on the images to learn more about each project.</p>
                     <!--Add filtering?-->
                 </div>
             </div>
@@ -138,6 +140,57 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Portfolio Item: Applied Research Day Rebranding-->
+                <div class="col-md-6 col-lg-4 portfolio--item">
+                        <a href="#portfolioItem6" class="portfolio--link" data-toggle="modal">
+                           <div class="portfolio--hover">
+                            <div class="portfolio--hover-content">
+                              <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                          </div>
+                            <img src="images/thumbnails/ard-booklet.jpg" alt="applied research booklet on wooden table" class="portfolio--thumbnail">
+                        </a>
+                        <div class="portfolio--caption text-center bg-light">
+                            <h3 class="portfolio--caption-title">Applied Research Day</h3>
+                            <h4 class="portfolio--caption-category">Branding/Design</h4>
+                        </div>
+    
+                        <!-- Modal -->
+                        <div class="portfolio--modal modal fade" id="portfolioItem6" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Applied Research Day Rebranding</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-7">
+                                                    <img src="images/thumbnails/ard-booklet.jpg" alt="applied research booklet on wooden table" class="portfolio--display">
+                                                </div>
+                                                <div class="col-md-6 col-lg-5">
+                                                   <div class="portfolio--details">
+                                                        <h6>Description: </h6>
+                                                        <p>Applied Research Day is highly anticipated every year because it’s a showcase of student projects that culminates all the hard work that they have accomplished that year. In 2016, I was asked to completely redesign all their marketing collaterals for this event. I created posters, signages, certificate templates, and most importantly, the event booklet. </p>
+                                                        <h6>Tools:</h6>
+                                                        <p>Adobe Illustrator, Adobe InDesign</p>
+                                                        <h6>Category:</h6>
+                                                        <p>Branding, Graphic Design</p>
+                                                        <h6>Date:</h6>
+                                                        <p>March - April 2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 
                 
                 <!--Portfolio Item: KSKY COOL-->
@@ -193,58 +246,6 @@
                     </div>
                 </div>
                 
-                <!--Portfolio Item: Travel Infographic-->
-                <div class="col-md-6 col-lg-4 portfolio--item">
-                    <a href="#portfolioTravelInfographic" class="portfolio--link" data-toggle="modal">
-                       <div class="portfolio--hover">
-                        <div class="portfolio--hover-content">
-                          <i class="fas fa-search-plus fa-2x"></i>
-                        </div>
-                      </div>
-                        <img src="images/thumbnails/travel-infographic.jpg" alt="various graphic images of travel" class="portfolio--thumbnail">
-                    </a>
-                    <div class="portfolio--caption text-center bg-light">
-                        <h3 class="portfolio--caption-title">Travel - Animated Infographic </h3>
-                        <h4 class="portfolio--caption-category">Motion Graphics Video</h4>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="portfolio--modal modal fade" id="portfolioTravelInfographic" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Travel - Animated Infographic</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-6 col-lg-7">
-                                                <div class="video-responsive">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LzChOd0SMS8?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-5">
-                                               <div class="portfolio--details">
-                                                    <h6>Description: </h6>
-                                                    <p>Travelling has always been a passion of mine and whenever I get the opportunity, I would use that as my assignment topic. I researched statistics about travelling and then creatively displayed the data in an infographic video. I created all the assets for the motion graphics.</p>
-                                                    <h6>Tools:</h6>
-                                                    <p>Adobe Illustrator, Adobe After Effects</p>
-                                                    <h6>Category:</h6>
-                                                    <p>Motion Graphics Video</p>
-                                                    <h6>Date:</h6>
-                                                    <p>April 2015</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
                 <!--Portfolio Item: Autumn Flowers-->
                 <div class="col-md-6 col-lg-4 portfolio--item">
@@ -511,56 +512,7 @@
                 </div>
                 
                 
-                <!--Portfolio Item: Applied Research Day Rebranding-->
-                <div class="col-md-6 col-lg-4 portfolio--item">
-                    <a href="#portfolioItem6" class="portfolio--link" data-toggle="modal">
-                       <div class="portfolio--hover">
-                        <div class="portfolio--hover-content">
-                          <i class="fas fa-search-plus fa-2x"></i>
-                        </div>
-                      </div>
-                        <img src="images/thumbnails/ard-booklet.jpg" alt="applied research booklet on wooden table" class="portfolio--thumbnail">
-                    </a>
-                    <div class="portfolio--caption text-center bg-light">
-                        <h3 class="portfolio--caption-title">Applied Research Day</h3>
-                        <h4 class="portfolio--caption-category">Branding/Design</h4>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="portfolio--modal modal fade" id="portfolioItem6" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Applied Research Day Rebranding</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-6 col-lg-7">
-                                                <img src="images/thumbnails/ard-booklet.jpg" alt="applied research booklet on wooden table" class="portfolio--display">
-                                            </div>
-                                            <div class="col-md-6 col-lg-5">
-                                               <div class="portfolio--details">
-                                                    <h6>Description: </h6>
-                                                    <p>Applied Research Day is highly anticipated every year because it’s a showcase of student projects that culminates all the hard work that they have accomplished that year. In 2016, I was asked to completely redesign all their marketing collaterals for this event. I created posters, signages, certificate templates, and most importantly, the event booklet. </p>
-                                                    <h6>Tools:</h6>
-                                                    <p>Adobe Illustrator, Adobe InDesign</p>
-                                                    <h6>Category:</h6>
-                                                    <p>Branding, Graphic Design</p>
-                                                    <h6>Date:</h6>
-                                                    <p>March - April 2016</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 
                 <!--Portfolio Item: Success Campaign-->
                 <div class="col-md-6 col-lg-4 portfolio--item">
@@ -664,6 +616,60 @@
                         </div>
                     </div>
                 </div>
+
+                                <!--Portfolio Item: Travel Infographic-->
+                                <div class="col-md-6 col-lg-4 portfolio--item">
+                                        <a href="#portfolioTravelInfographic" class="portfolio--link" data-toggle="modal">
+                                           <div class="portfolio--hover">
+                                            <div class="portfolio--hover-content">
+                                              <i class="fas fa-search-plus fa-2x"></i>
+                                            </div>
+                                          </div>
+                                            <img src="images/thumbnails/travel-infographic.jpg" alt="various graphic images of travel" class="portfolio--thumbnail">
+                                        </a>
+                                        <div class="portfolio--caption text-center bg-light">
+                                            <h3 class="portfolio--caption-title">Travel - Animated Infographic </h3>
+                                            <h4 class="portfolio--caption-category">Motion Graphics Video</h4>
+                                        </div>
+                    
+                                        <!-- Modal -->
+                                        <div class="portfolio--modal modal fade" id="portfolioTravelInfographic" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Travel - Animated Infographic</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-lg-7">
+                                                                    <div class="video-responsive">
+                                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LzChOd0SMS8?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-5">
+                                                                   <div class="portfolio--details">
+                                                                        <h6>Description: </h6>
+                                                                        <p>Travelling has always been a passion of mine and whenever I get the opportunity, I would use that as my assignment topic. I researched statistics about travelling and then creatively displayed the data in an infographic video. I created all the assets for the motion graphics.</p>
+                                                                        <h6>Tools:</h6>
+                                                                        <p>Adobe Illustrator, Adobe After Effects</p>
+                                                                        <h6>Category:</h6>
+                                                                        <p>Motion Graphics Video</p>
+                                                                        <h6>Date:</h6>
+                                                                        <p>April 2015</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
                 
                 
                 <!--Portfolio Item: DLS Tech-->
@@ -727,24 +733,24 @@
 
 
     <!--Goals-->
-    <section id="goals" class="bg-light">
+    <section id="goals" class="bg-dark" aria-label="goals">
         <div class="container goals">
             <div class="row">
                 <div class="col-lg-6 my-auto">
-                    <h2>Commitment to #Accessibility</h2>
+                    <h2 class="goals--commitment">Commitment to #Accessibility</h2>
                     <!--Published Presentation-->
                 </div>
                     
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center goals--badges">
                    
                     <!--Showcase Pluralsight Badge-->
-                   <div class="col-lg-12">
+                   <div class="col-lg-12 goals--pluralsight">
                     <a href="https://app.pluralsight.com/profile/eileen-xue" target="_blank">
                         <img src="images/pluralsight-accessibility-skill.png" alt="accessibility skill iQ from pluralsight">
                     </a>
                     </div>
                     <!--Chang School Courses-->
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 goals--chang">
                     <iframe frameborder="0" scrolling="no" src="https://credly.com/sharedembed/14845557" width="180" height="230"></iframe>
                     <iframe frameborder="0" scrolling="no" src="https://credly.com/sharedembed/15363818" width="180" height="230"></iframe>
                 </div>
@@ -755,7 +761,7 @@
 
 
     <!--Footer-->
-    <footer class="bg-dark footer">
+    <footer class="footer">
         <div class="container">
            <div class="row">
            <div class="col-sm-12">

@@ -1,6 +1,15 @@
 .goals{
-    //height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+
+    &--commitment{
+        font-size: 2.5rem;
+        padding: 24px 8px;
+    }
+
+    &--pluralsight, &--chang{
+        margin: 16px;
+    }
 }
