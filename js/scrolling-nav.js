@@ -47,4 +47,15 @@
     $('.navbar').removeClass('d-none');
   })
 
+  // Stop iframe from playing when modal closes
+  $(function(){
+    $("body").on('hidden.bs.modal', function (e) {
+      var $iframes = $(e.target).find("iframe");
+      $iframes.each(function(index, iframe){
+        $(iframe).attr("src", $(iframe).attr("src"));
+      });
+    });
+  });
+
+
 })(jQuery); // End of use strict
